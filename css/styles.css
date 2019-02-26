@@ -1,3 +1,50 @@
 :root{
-    --color-principal: blue;
+    --color-principal: #333333; 
+    --color-secundario: #9DA5A0; 
+    --color-textos: #e9e9e9; 
+    --color-resalte: #60CAAD; 
 }
+
+.bg-color-principal { background-color: var(--color-principal) !important; }
+.bg-color-secundario{ background-color: var(--color-secundario) !important; }
+.bg-color-textos    { background-color: var(--color-textos) !important; }
+.bg-color-resalte   { background-color: var(--color-resalte) !important; }
+
+.color-principal    { color: var(--color-principal) !important; }
+.color-secundario   { color: var(--color-secundario) !important; }
+.color-textos       { color: var(--color-textos) !important; }
+.color-resalte      { color: var(--color-resalte) !important; }
+
+header
+{
+    min-height: 350px;
+}
+
+.bg-color-resalte > .uk-navbar-right .uk-navbar-nav > li > a
+{
+    color: white;
+    opacity: 1;
+    transition: opacity;
+}
+
+.bg-color-resalte > .uk-navbar-right .uk-navbar-nav > li > a:hover
+{
+    opacity: .6;
+}
+
+/* .uk-navbar-nav > li > a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    right: calc(102% - 15px);
+    bottom: 20px;
+    height: 1px;
+    background-color: currentColor;
+    transition: .3s ease-in-out;
+    transition-property: right;
+}
+
+.uk-navbar-nav > li > a:hover::before {
+    right: 15px;
+} */

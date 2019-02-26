@@ -10,8 +10,53 @@
         <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
-		<header>Header</header>
-		<h1>Portafolio UIkit</h1>
+		<header class="bg-color-principal">
+			<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky bg-color-resalte ; cls-inactive: uk-navbar-transparent uk-light; top: 200; bottom: #transparent-sticky-navbar">
+				<nav class="uk-navbar-container uk-light" uk-navbar style="position: relative; z-index: 980;">
+					<div class="uk-navbar-right">
+			
+						<ul class="uk-navbar-nav">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Acerca de</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+			
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="uk-container uk-container-large">
+			<h1 class="uk-heading-hero" >Portafolio UIkit</h1>
+			<div class=" uk-child-width-1-2@xs uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" uk-grid="masonry: true">
+					<div>
+						<div class="uk-card uk-background-primary uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-background-secondary uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 230px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-background-primary uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 250px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 260px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 220px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-background-primary uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 280px">Item</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+					</div>
+				</div>
+			</div>
 		<footer>Footer</footer>
     </body>
 </html>
